@@ -338,6 +338,9 @@ footer{
     cursor: pointer;
     color: white;
 }
+.sociallinks a i:hover{
+    color:#016156;
+}
 .sociallinks{
     margin-bottom: 20px;
 }
