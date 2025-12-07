@@ -46,5 +46,26 @@
         </div>
     </div>
 
+    <script>
+    
+    const form = document.querySelector("form");
+    const emailInput = document.querySelector("input[type='email']");
+
+    
+    form.addEventListener("submit", function(event) {
+        
+        
+        event.preventDefault();
+
+        
+        if (!emailInput.value.includes("@")) {
+            alert("Please include an '@' in the email address.");
+        } else {
+            
+            window.location.href = "credenza.html";
+        }
+    });
+</script>
+
 </body>
 </html>

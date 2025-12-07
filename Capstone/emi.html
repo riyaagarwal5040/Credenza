@@ -22,10 +22,7 @@
             </div>
         </div>
 
-        <div class="navbutton">
-            
-            <button class="getstarted">Get Started</button>
-        </div>
+        
     </nav>
 
     
@@ -187,10 +184,10 @@
     
     <script>
         function calculateEMI() {
-            var p = document.getElementById('principal').value;
-            var r = document.getElementById('rate').value;
-            var years = document.getElementById('tenure').value;
-            var result = document.getElementById('emiResult');
+            let p = document.getElementById('principal').value;
+            let r = document.getElementById('rate').value;
+            let years = document.getElementById('tenure').value;
+            let result = document.getElementById('emiResult');
 
             if(p == "" || r == "" || years == "") {
                 alert("Please fill in all fields");
@@ -198,12 +195,12 @@
             }
 
             
-            var r_monthly = (r / 12) / 100;
-            var months = years * 12;
+            let r_monthly = (r / 12) / 100;
+            let months = years * 12;
 
-            var top = Math.pow((1 + r_monthly), months);
-            var bottom = top - 1;
-            var emi = p * r_monthly * (top / bottom);
+            let top = Math.pow((1 + r_monthly), months);
+            let bottom = top - 1;
+            let emi = p * r_monthly * (top / bottom);
 
             result.innerText = "₹ " + Math.round(emi).toLocaleString();
         }
