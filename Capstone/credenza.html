@@ -3,171 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="credenza.css">
-    <!-- For icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h2 class="name">Credenza</h2>
-        <nav class="navbar">
-            <ul class="navlinks">
-                <li><a href="#" class="navitem" id="home">Home</a></li>
-                <li><a href="#" class="navitem">Loan Plans</a></li>
-                <li><a href="#" class="navitem">EMI Calculator</a></li>
-                <li><a href="#" class="navitem">About us</a></li>
-                <li><a href="#" class="navitem">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="navbutton"><button>Get Started</button></a>
-    </header>
+    <nav class="navbar">
+        <a href="credenza.html" class="credenza" >Credenza</a>
 
-
-
-    <section class="herosection">
-        <div class="herocontent">
-            <h1>Welcome to Credenza</h1>
-            <p>Your partner in financial growth and stability.</p>
-        </div>
-    </section>
-
-
-    <section class="featuresection">
-        <h2>Our Features</h2>
-        <div class="card">
-            <div class="cardstyle">
-                <div class="icon"><i class="fa-solid fa-shield"></i></div>
-                <h3>Secure Transactions</h3>
-                <p>Bank-level security ensures your financial information is always protected with end-to-end encryption.</p>
-            </div>
-            <div class="cardstyle">
-                <div class="icon"><i class="fa-solid fa-arrows-rotate"></i></div>
-                <h3>Flexible Repayments</h3>
-                <p>Choose repayment plans that fit your budget with customizable EMI options and early payment benefits.</p>
-            </div>
-            <div class="cardstyle">
-                <div class="icon"><i class="fa-solid fa-headset"></i></div>
-                <h3>Customer Support</h3>
-                <p>24/7 dedicated support team ready to assist you with any queries or concerns throughout your loan journey.</p>
+        <div class="navcontent">
+            <div class="pages">
+                <a href="credenza.html" class="page">Home</a>
+                <a href="loanplan.html" class="page">Loan Plans</a>
+                <a href="emi.html" class="page">EMI Calculator</a>
+                <a href="about.html" class="page">About Us</a>
+                <a href="contact.html" class="page">Contact</a>
             </div>
         </div>
+
+        <div class="navbuttton">
+            <button class="getstarted">Get Started</button>
+            
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        
+       
+        <div class="hero-content">
+            <span class="hero-badge">Smart Financial Growth</span>
+            <h1>Welcome to <span class="highlight-text">Credenza</span></h1>
+            <p>Your partner in financial growth and stability. We provide secure loans, smart investment plans, and a future you can count on.</p>
+            
+            <div class="cta-group">
+                <button class="btn-main"><a href="#">Get Started</a></button>
+                <button class="btn-secondary"><a href="emi.html">Calculate EMI</a></button>
+            </div>
+        </div>
+
+       
+        <div class="hero-visual">
+            
+            <img src="hero image .png" alt="Credenza Illustration">
+        </div>
+
     </section>
 
+    <section class="feature-section">
+        <h2 class="ourfeatures">
+            Our Features
+        </h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">♻️</div>
+                <h3 class="feature-heading">Flexible Repayments</h3>
+                <p class="feature-para">
+                    Customize your EMI schedule to match your income cycle and financial goals.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3 class="feature-heading">Secure Transactions</h3>
+                <p class="feature-para">
+                    Bank-level security with end-to-end encryption to protect your financial data.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎧</div>
+                <h3 class="feature-heading">Customer Support</h3>
+                <p class="feature-para">
+                    24/7 dedicated support team to assist you at every step of your loan journey.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <section class="loan">
-        <h2>Loan Types</h2>
-        <div class="loantype">
-            <div class="loancard">
-                <div class="loanimage">
-                    <img src="PHOTO3.jpeg" alt="HomeLoan">
+        <h2 class="loan-title">Loan Types</h2>
+        <div class="loantypes">
+            <div class="loan-card">
+                <div class="loan-image">
+                    <img src="PHOTO3.jpeg" alt="Home Loan" />
                 </div>
-                <div class="loancontent">
-                    <h3>Home Loans</h3>
-                    <p>Make your dream home a reality with our competitive interest rates and flexible tenure options. Get up to 90% financing on property value.</p>
-                </div>
-            </div>
-            <div class="loancard">
-                <div class="loanimage">
-                    <img src="PHOTO1.jpeg" alt="CarLoans" >
-                </div>
-                <div class="loancontent">
-                    <h3>Car Loans</h3>
-                    <p>Drive your dream car today with easy approval and minimal documentation. Enjoy low interest rates with flexible repayment periods.</p>
+                <div class="loan-content">
+                    <h3 class="loan-heading">Home Loans</h3>
+                    <p class="loan-para">
+                        Make your dream home a reality with our competitive home loan rates starting at 8.5% p.a.
+                    </p>
                 </div>
             </div>
-            <div class="loancard">
-                <div class="loanimage">
-                    <img src="PHOTO2.jpeg" alt="EducationLoans">
+
+            <div class="loan-card">
+                <div class="loan-image">
+                    <img src="PHOTO1.jpeg" alt="Car Loan" />
                 </div>
-                <div class="loancontent">
-                    <h3>Education Loans</h3>
-                    <p>Invest in your future with our education loans. Cover tuition, living expenses, and more with our student-friendly repayment options.</p>
+                <div class="loan-content">
+                    <h3 class="loan-heading">Car Loans</h3>
+                    <p class="loan-para">
+                        Drive your dream car today with quick approvals and flexible repayment options.
+                    </p>
+                </div>
+            </div>
+
+            <div class="loan-card">
+                <div class="loan-image">
+                    <img src="PHOTO2.jpeg" alt="Education Loan" />
+                </div>
+                <div class="loan-content">
+                    <h3 class="loan-heading">Education Loans</h3>
+                    <p class="loan-para">
+                        Invest in your future with education loans covering tuition, living expenses, and more.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="trusted">
-        <h2>Trusted by Thousnads</h2>
-        <div class="testimonials">
-            <div class="statements">
-                <i class="fa-solid fa-quote-left"></i>
-                <img src="test1.jpeg" alt="#">
-                <p>Credenza made buying my first home possible. The process was smooth, and their team was incredibly supportive throughout. Highly recommended!</p>
-                <h4>Priya Sharma</h4>
-            </div>
-            <div class="statements">
-                <i class="fa-solid fa-quote-left"></i>
-                <img src="test2.jpeg" alt="#">
-                <p>I got my car loan approved within 48 hours. The flexible EMI options fit perfectly within my budget. Excellent service and transparent process!</p>
-                <h4>Marcus Johnson</h4>
-            </div>
-            <div class="statements">
-                <i class="fa-solid fa-quote-left"></i>
-                <img src="test3.jpeg" alt="#">
-                <p>Financing my daughter's education was stress-free thanks to Credenza. Their customer support team answered all my questions patiently.</p>
-                <h4>Robert Williams</h4>
-            </div>
+    <section class="testimonials">
+        <h2 class="test-title"></h2>
+        <div class="difftestimonials">
+
         </div>
     </section>
 
-    <section class="getstarted">
+    <section class="trusted-section">
+    <h2>Trusted by Thousands</h2>
+
+    <div class="testimonials-container">
+        
+       
+        <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">Credenza made buying my first home incredibly easy. The process was smooth and the team was always available to answer my questions.</p>
+            
+            <div class="user-profile">
+               
+                <img src="test1.jpeg" alt="Priya Sharma" class="user-img">
+                <div class="user-info">
+                    <h4>Priya Sharma</h4>
+                    <span>Home Loan Customer</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">I got my car loan approved within 24 hours! The interest rates were very competitive and the EMI fits my budget perfectly.</p>
+            
+            <div class="user-profile">
+                
+                <img src="test2.jpeg" alt="Rahul Verma" class="user-img">
+                <div class="user-info">
+                    <h4>Rahul Verma</h4>
+                    <span>Car Loan Customer</span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="testimonial-card">
+            <div class="quote-icon">❝</div>
+            <p class="testimonial-text">Thanks to Credenza, I could pursue my MBA without worrying about finances. The repayment terms are very student-friendly.</p>
+            
+            <div class="user-profile">
+                
+                <img src="test3.jpeg" alt="Ananya Patel" class="user-img">
+                <div class="user-info">
+                    <h4>Ananya Patel</h4>
+                    <span>Education Loan Customer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="cta-section">
+    <div class="cta-content">
         <h2>Ready to Get Started?</h2>
-        <p>Join thousands of satisfied customers who have achieved their financial goals with Credenza</p>
-        <a href="#">
-            <button>Get Started</button>
-        </a>
-    </section>
+        <p>Join thousands of satisfied customers who have achieved their financial goals with Credenza.</p>
+        <a href="#" class="cta-btn">Get Started</a>
+    </div>
+</section>
 
 
-    <footer>
-        <div class="footercontent">
-            <div class="column">
-                <h3>Credenza</h3>
-                <p>Your partner in financial growth and stability. We provide secure loans with flexible repayments.</p>
-            </div>
-            <div class="column">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Loan Plans</a></li>
-                    <li><a href="#">EMI Calculator</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#">Home Loans</a></li>
-                    <li><a href="#">Car Loans</a></li>
-                    <li><a href="#">Education Loans</a></li>
-                    <li><a href="#">Personal Loans</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Connect With Us</h4>
-                <div class="sociallinks">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div>
-                    <p>Email: info@credenza.com</p>
-                    <p>Phone: 1-800-CREDI-EASE</p>
-                </div>
-            </div>
-        </div>
-        <div class="footerbottom">
-            <p>&copy; 2025 Credenza. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-        </div>
-    </footer>
-
-    
-
+<footer class="site-footer">
+    <p>&copy; 2025 Credenza. All rights reserved.</p>
+</footer>
 </body>
 </html>
