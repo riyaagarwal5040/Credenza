@@ -68,6 +68,10 @@ body{
     transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 8px 18px rgba(0, 150, 136, 0.25);
 }
+.getstarted a{
+    text-decoration: none;
+    color: inherit;
+}
 .getstarted:hover{
     background: rgb(0, 148, 135);
     transform: translateY(-1px);

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- YOUR NAVBAR (Exact Code) -->
+    
     <nav class="navbar">
         <a href="credenza.html" class="credenza">Credenza</a>
 
@@ -23,19 +23,19 @@
         </div>
 
         <div class="navbutton">
-            <!-- Fixed typo in class name 'navbuttton' to 'navbutton' to match CSS -->
+            
             <button class="getstarted">Get Started</button>
         </div>
     </nav>
 
-    <!-- CALCULATOR SECTION -->
+    
     <div class="hero-section">
         <div class="container">
             <h1>Simple EMI Calculator</h1>
             <p>Plan your loan repayment instantly.</p>
 
             <div class="calculator-box">
-                <!-- Inputs -->
+                
                 <div class="form-side">
                     <label>Loan Type</label>
                     <select id="loanType">
@@ -57,7 +57,7 @@
                     <button onclick="calculateEMI()" class="calc-btn">Calculate Now</button>
                 </div>
 
-                <!-- Result -->
+                
                 <div class="result-side">
                     <h3>Your Monthly Payment</h3>
                     <div class="emi-text" id="emiResult">₹ 0</div>
@@ -67,7 +67,7 @@
         </div>
     </div>
 
-    <!-- CONTENT: What is EMI -->
+    
     <section class="section">
         <div class="container">
             <h2>What is EMI?</h2>
@@ -89,7 +89,7 @@
         </div>
     </section>
 
-    <!-- CONTENT: Types of EMI -->
+    
     <section class="section bg-gray">
         <div class="container">
             <h2>Types of EMI Structures</h2>
@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <!-- CONTENT: Formula & Table -->
+    
     <section class="section">
         <div class="container">
             <h2>How It Is Calculated</h2>
@@ -176,15 +176,15 @@
         </div>
     </section>
 
-    <!-- CONTENT: Tips -->
+   
    
 
-    <!-- Footer -->
+    
     <footer class="footer">
         <p>&copy; 2025 Credenza. All rights reserved.</p>
     </footer>
 
-    <!-- JS SCRIPT -->
+    
     <script>
         function calculateEMI() {
             var p = document.getElementById('principal').value;
@@ -197,7 +197,7 @@
                 return;
             }
 
-            // Calculation
+            
             var r_monthly = (r / 12) / 100;
             var months = years * 12;
 
