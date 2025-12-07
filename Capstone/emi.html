@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator - Credenza</title>
+    <link rel="stylesheet" href="emi.css">
+</head>
+<body>
+
+    <!-- YOUR NAVBAR (Exact Code) -->
+    <nav class="navbar">
+        <a href="credenza.html" class="credenza">Credenza</a>
+
+        <div class="navcontent">
+            <div class="pages">
+                <a href="credenza.html" class="page">Home</a>
+                <a href="loanplan.html" class="page">Loan Plans</a>
+                <a href="emi.html" class="page">EMI Calculator</a>
+                <a href="about.html" class="page">About Us</a>
+                <a href="contact.html" class="page">Contact</a>
+            </div>
+        </div>
+
+        <div class="navbutton">
+            <!-- Fixed typo in class name 'navbuttton' to 'navbutton' to match CSS -->
+            <button class="getstarted">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- CALCULATOR SECTION -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Simple EMI Calculator</h1>
+            <p>Plan your loan repayment instantly.</p>
+
+            <div class="calculator-box">
+                <!-- Inputs -->
+                <div class="form-side">
+                    <label>Loan Type</label>
+                    <select id="loanType">
+                        <option value="home">Home Loan</option>
+                        <option value="personal">Personal Loan</option>
+                        <option value="car">Car Loan</option>
+                        <option value="edu">Education Loan</option>
+                    </select>
+
+                    <label>Loan Amount (₹)</label>
+                    <input type="number" id="principal" placeholder="Ex: 100000">
+
+                    <label>Interest Rate (% per year)</label>
+                    <input type="number" id="rate" placeholder="Ex: 8.5" step="0.1">
+
+                    <label>Tenure (Years)</label>
+                    <input type="number" id="tenure" placeholder="Ex: 5">
+
+                    <button onclick="calculateEMI()" class="calc-btn">Calculate Now</button>
+                </div>
+
+                <!-- Result -->
+                <div class="result-side">
+                    <h3>Your Monthly Payment</h3>
+                    <div class="emi-text" id="emiResult">₹ 0</div>
+                    <small>Total amount depends on tenure and rate.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT: What is EMI -->
+    <section class="section">
+        <div class="container">
+            <h2>What is EMI?</h2>
+            <p>An EMI (Equated Monthly Instalment) is a fixed amount of money you pay every month to repay a loan. It includes <strong>Principal</strong> (the amount you borrowed) + <strong>Interest</strong> (the cost of borrowing).</p>
+            
+            <div class="box-light">
+                <h3>Why EMIs Matter</h3>
+                <ul>
+                    <li>Plan your monthly budget</li>
+                    <li>Choose a loan that fits your income</li>
+                    <li>Avoid financial stress</li>
+                    <li>Compare lenders and interest rates</li>
+                </ul>
+            </div>
+            
+            <div class="box-highlight">
+                <strong>Simple Example:</strong> If you borrow ₹1,00,000 at 12% interest for 1 year, your EMI might be around ₹8,885 per month.
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT: Types of EMI -->
+    <section class="section bg-gray">
+        <div class="container">
+            <h2>Types of EMI Structures</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>1. Fixed EMI</h3>
+                    <p>Same EMI amount throughout the loan.</p>
+                    <small>Best for: Salaried individuals</small>
+                </div>
+                <div class="card">
+                    <h3>2. Floating EMI</h3>
+                    <p>EMI amount changes based on market rates.</p>
+                    <small>Best for: Home loans</small>
+                </div>
+                <div class="card">
+                    <h3>3. Step-Up EMI</h3>
+                    <p>EMI starts low and increases every year.</p>
+                    <small>Common for: Education loans</small>
+                </div>
+                <div class="card">
+                    <h3>4. Step-Down EMI</h3>
+                    <p>EMI starts high and decreases each year.</p>
+                    <small>Best for: Loans near retirement</small>
+                </div>
+                <div class="card">
+                    <h3>5. Bullet Repayment</h3>
+                    <p>Pay only interest monthly. Principal at the end.</p>
+                    <small>Used for: Gold/Business loans</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT: Formula & Table -->
+    <section class="section">
+        <div class="container">
+            <h2>How It Is Calculated</h2>
+            <div class="formula">
+                EMI = [P x R x (1+R)^N] / [(1+R)^N-1]
+            </div>
+            <p style="text-align: center;">P = Loan Amount | R = Monthly Interest | N = Months</p>
+            
+            <br><hr><br>
+
+            <h2>Comparison of Loans</h2>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Loan Type</th>
+                            <th>Interest Range</th>
+                            <th>Tenure</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Personal Loan</td>
+                            <td>10–24%</td>
+                            <td>1–5 yrs</td>
+                            <td>Quick needs</td>
+                        </tr>
+                        <tr>
+                            <td>Home Loan</td>
+                            <td>8–12%</td>
+                            <td>10–30 yrs</td>
+                            <td>Long-term</td>
+                        </tr>
+                        <tr>
+                            <td>Car Loan</td>
+                            <td>8–18%</td>
+                            <td>3–7 yrs</td>
+                            <td>Vehicle purchase</td>
+                        </tr>
+                        <tr>
+                            <td>Education Loan</td>
+                            <td>9–15%</td>
+                            <td>5–10 yrs</td>
+                            <td>Students</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT: Tips -->
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Credenza. All rights reserved.</p>
+    </footer>
+
+    <!-- JS SCRIPT -->
+    <script>
+        function calculateEMI() {
+            var p = document.getElementById('principal').value;
+            var r = document.getElementById('rate').value;
+            var years = document.getElementById('tenure').value;
+            var result = document.getElementById('emiResult');
+
+            if(p == "" || r == "" || years == "") {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            // Calculation
+            var r_monthly = (r / 12) / 100;
+            var months = years * 12;
+
+            var top = Math.pow((1 + r_monthly), months);
+            var bottom = top - 1;
+            var emi = p * r_monthly * (top / bottom);
+
+            result.innerText = "₹ " + Math.round(emi).toLocaleString();
+        }
+    </script>
+
+</body>
+</html>
